@@ -3,7 +3,7 @@ const Transaction = {
   properties: {
     date: { type: 'string' },
     amount: { type: 'string', minimum: 0.01 },
-    currency: { type: 'string' },
+    currency: { type: 'string', enum: ['EUR', 'USD', 'PLN', 'GBP', 'ILS'] },
     client_id: { type: 'integer', minimum: 1 },
   },
 };

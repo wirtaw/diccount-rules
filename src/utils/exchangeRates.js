@@ -8,7 +8,9 @@ const exchangeRatesService = {
       return rate;
     }
 
-    const { statusCode, body } = await request(`${configs.exchangeRate.url}/${date}`);
+    const { statusCode, body } = await request(
+      `${configs.exchangeRate.url}/${date}`
+    );
 
     if (statusCode === 200) {
       const data = await body.json();

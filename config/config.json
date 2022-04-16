@@ -1,18 +1,18 @@
 {
-  "development": {
-    "database": "database_development",
-    "host": "127.0.0.1",
-    "dialect": "postgres",
-    "username": "user",
-    "password": "postgres"
-  },
-  "test": {
-    "dialect": "sqlite",
-    "storage": ":memory:"
-  },
-  "production": {
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
-  }
+    "development": {
+        "database": "database_development",
+        "host": "127.0.0.1",
+        "dialect": "postgres",
+        "username": "user",
+        "password": "postgres"
+    },
+    "test": {
+        "dialect": "sqlite",
+        "storage": ":memory:"
+    },
+    "production": {
+        "database": "database_production",
+        "host": "127.0.0.1",
+        "dialect": "postgres"
+    }
 }

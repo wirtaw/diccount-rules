@@ -15,7 +15,7 @@ const start = async () => {
     await app.listen(configs.main.port);
   } catch (err) {
     fastify.log.error(err);
-    process.exit(1);
+    throw new Error(err.message);
   }
 };
 start();

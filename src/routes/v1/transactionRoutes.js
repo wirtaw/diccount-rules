@@ -21,7 +21,7 @@ const postTransactionOpts = {
           commission_currency: { type: 'string' },
         },
       },
-      500: {
+      400: {
         type: 'object',
         properties: {
           statusCode: { type: 'number' },

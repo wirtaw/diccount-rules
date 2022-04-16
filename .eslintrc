@@ -1,83 +1,78 @@
 {
-  "env": {
-    "es6": true,
-    "node": true
-  },
-  "extends": [
-    "eslint:recommended",
-    "plugin:import/errors",
-    "airbnb-base"
-  ],
-  "parserOptions": {
-    "ecmaVersion": 2020,
-    "sourceType": "module"
-  },
-  "rules": {
-    "no-console": "off",
-    "indent": [
-      "error",
-      2
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true,
+        "mocha": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:import/errors",
+        "plugin:node/recommended",
+        "prettier"
     ],
-    "linebreak-style": [
-      "error",
-      "unix"
-    ],
-    "quotes": [
-      "error",
-      "single"
-    ],
-    "semi": [
-      "error",
-      "always"
-    ],
-    "arrow-parens": [2, "as-needed"],
-    "no-param-reassign": "off",
-    "no-shadow": "error",
-    "max-len": "off",
-    "import/extensions": "warn",
-    "import/no-duplicates": "error",
-    "no-unused-vars": "error",
-    "import/prefer-default-export": "off",
-    "no-await-in-loop": "warn",
-    "class-methods-use-this": "off",
-    "import/no-unresolved": "error",
-    "no-undef": "error",
-    "prefer-destructuring": "off",
-    "consistent-return": "off",
-    "no-continue": "off",
-    "no-cond-assign": "off",
-    "no-restricted-syntax": "off",
-    "no-throw-literal": "off",
-    "no-bitwise": "off",
-    "camelcase": "off",
-    "brace-style": "warn",
-    "no-plusplus": "off",
-    "import/no-named-as-default-member": "off",
-    "func-names": "off",
-    "eqeqeq": "off",
-    "no-use-before-define": "off",
-    "import/no-named-as-default": "off",
-    "array-callback-return": "error",
-    "no-underscore-dangle": "off",
-    "no-multi-assign": "error",
-    "import/no-cycle": "error",
-    "radix": "off",
-    "import/named": "off",
-    "no-return-await": "error",
-    "import/no-extraneous-dependencies": "off",
-    "new-cap": "warn",
-    "no-buffer-constructor": "off",
-    "no-return-assign": "error",
-    "no-prototype-builtins": "off",
-    "valid-typeof": "off",
-    "no-unreachable": "error",
-    "no-constant-condition": "off",
-    "no-unexpected-multiline": "off",
-    "prefer-rest-params": "off",
-    "guard-for-in": "off",
-    "no-useless-escape": "error",
-    "no-empty": "error",
-    "default-case": "off",
-    "object-curly-spacing": ["error", "always"]
-  }
+    "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-console": "off",
+        "indent": ["error", 2],
+        "linebreak-style": ["error", "unix"],
+        "quotes": ["error", "single"],
+        "semi": ["error", "always"],
+        "arrow-parens": [2, "as-needed"],
+        "no-param-reassign": "off",
+        "no-shadow": "error",
+        "max-len": "off",
+        "import/extensions": "warn",
+        "import/no-duplicates": "error",
+        "no-unused-vars": ["error",
+            {
+                "varsIgnorePattern": "should|expect"
+            }
+        ],
+        "import/prefer-default-export": "off",
+        "no-await-in-loop": "warn",
+        "class-methods-use-this": "off",
+        "import/no-unresolved": "error",
+        "no-undef": "error",
+        "prefer-destructuring": "off",
+        "consistent-return": "off",
+        "no-continue": "off",
+        "no-cond-assign": "off",
+        "no-restricted-syntax": "off",
+        "no-throw-literal": "off",
+        "no-bitwise": "off",
+        "camelcase": "off",
+        "brace-style": "warn",
+        "no-plusplus": "off",
+        "import/no-named-as-default-member": "off",
+        "func-names": "off",
+        "eqeqeq": "off",
+        "no-use-before-define": "off",
+        "import/no-named-as-default": "off",
+        "array-callback-return": "error",
+        "no-underscore-dangle": "off",
+        "no-multi-assign": "error",
+        "import/no-cycle": "error",
+        "radix": "off",
+        "import/named": "off",
+        "no-return-await": "error",
+        "import/no-extraneous-dependencies": "off",
+        "new-cap": "warn",
+        "no-buffer-constructor": "off",
+        "no-return-assign": "error",
+        "no-prototype-builtins": "off",
+        "valid-typeof": "off",
+        "no-unreachable": "error",
+        "no-constant-condition": "off",
+        "no-unexpected-multiline": "off",
+        "prefer-rest-params": "off",
+        "guard-for-in": "off",
+        "no-useless-escape": "error",
+        "no-empty": "error",
+        "default-case": "off",
+        "object-curly-spacing": ["error", "always"]
+    }
 }

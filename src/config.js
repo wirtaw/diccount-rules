@@ -9,7 +9,10 @@ const sequilize = {
   storage: false,
 };
 
-if (process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'production') {
+if (
+  process.env.NODE_ENV === 'development' ||
+    process.env.NODE_ENV === 'production'
+) {
   sequilize.autoConnect = !!process.env.SEQUELIZE_CONNECT;
   sequilize.dialect = process.env.SEQUELIZE_DIALECT;
   sequilize.storage = '';
@@ -37,7 +40,8 @@ module.exports = {
     url: process.env.EXCHANGE_URL || '',
   },
   rules: {
-    rule3_interval: Number(process.env.RULES_3_INTERVAL_SECONDS) || 30 * 86400,
+    rule3_interval:
+            Number(process.env.RULES_3_INTERVAL_SECONDS) || 30 * 86400,
     discount: parseFloat(process.env.RULES_DISCOUNT) || 0.05,
     minPrice: parseFloat(process.env.RULES_MIN_PRICE) || 0.05,
   },

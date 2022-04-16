@@ -1,3 +1,4 @@
+// eslint-disable-next-line node/no-unpublished-require
 const chai = require('chai');
 const { MockAgent, setGlobalDispatcher } = require('undici');
 
@@ -5,7 +6,7 @@ require('dotenv-flow').config({
   default_node_env: 'test',
 });
 
-const exchangeRatesService = require('../src/utils/ExchangeRates');
+const exchangeRates = require('../src/utils/exchangeRates');
 
 const { expect } = chai;
 
@@ -38,8 +39,10 @@ describe('test exchange rates', async () => {
     date = '2022-04-07';
     rate = 0.7;
 
-    mockPool.intercept({ path: `/${date}` }).reply(200, { rates: { USD: rate } });
-    const result = await exchangeRatesService.get(currency, date);
+    mockPool
+      .intercept({ path: `/${date}` })
+      .reply(200, { rates: { USD: rate } });
+    const result = await exchangeRates.get(currency, date);
 
     expect(result).to.equal(rate, `rate to ${rate} for ${currency}`);
   });
@@ -49,8 +52,10 @@ describe('test exchange rates', async () => {
     date = '2022-04-09';
     rate = 0;
 
-    mockPool.intercept({ path: `/${date}` }).reply(200, { rates: { USD: 1.5 } });
-    const result = await exchangeRatesService.get(currency, date);
+    mockPool
+      .intercept({ path: `/${date}` })
+      .reply(400, null);
+    const result = await exchangeRates.get(currency, date);
 
     expect(result).to.equal(rate, `rate to ${rate} for ${currency}`);
   });

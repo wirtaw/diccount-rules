@@ -5,7 +5,9 @@ const DIR_PATH = path.resolve('./src/rules/');
 
 const getRules = async () => {
   const dirItems = await fs.promises.readdir(DIR_PATH);
-  const rulesFiles = dirItems.filter(fileName => fileName.indexOf('.js') > -1 && fileName !== 'index.js');
+  const rulesFiles = dirItems.filter(
+    fileName => fileName.indexOf('.js') > -1 && fileName !== 'index.js'
+  );
   for (const file of rulesFiles) {
     // eslint-disable-next-line import/no-dynamic-require, global-require
     exports[file.replace('.js', '')] = require(`./${file}`);
@@ -23,7 +25,9 @@ const findMinimalDiscount = async (transaction, rules, opt) => {
   });
 
   const values = await Promise.all(calculations);
-  const filteredValues = values.filter(value => !!value).sort((a, b) => a - b);
+  const filteredValues = values
+    .filter(value => !!value)
+    .sort((a, b) => a - b);
 
   if (Array.isArray(filteredValues) && filteredValues.length > 0) {
     return filteredValues[0];

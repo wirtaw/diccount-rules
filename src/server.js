@@ -34,12 +34,11 @@ function build(opts = {}) {
     };
   }
 
-  app.register(fsequelize, sequilizeOpt)
-    .ready(err => {
-      if (err) {
-        console.error('Unable to connect to the database:', err);
-      }
-    });
+  app.register(fsequelize, sequilizeOpt).ready(err => {
+    if (err) {
+      console.error('Unable to connect to the database:', err);
+    }
+  });
 
   app.register(fastifyOAS, {
     routePrefix: '/docs',

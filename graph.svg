@@ -51,15 +51,15 @@
 <path fill="none" stroke="#757575" d="M602.88,-118.96C613.02,-116.25 623.43,-113.09 633,-109.5 662.39,-98.48 694.09,-81.76 716.15,-69.27"/>
 <polygon fill="#757575" stroke="#757575" points="718.05,-72.22 724.98,-64.21 714.57,-66.15 718.05,-72.22"/>
 </g>
-<!-- utils/ExchangeRates.js -->
+<!-- utils/exchangeRates.js -->
 <g id="node5" class="node">
-<title>utils/ExchangeRates.js</title>
+<title>utils/exchangeRates.js</title>
 <path fill="none" stroke="#c6c5fe" d="M814.33,-23C814.33,-23 676.67,-23 676.67,-23 672.83,-23 669,-19.17 669,-15.33 669,-15.33 669,-7.67 669,-7.67 669,-3.83 672.83,0 676.67,0 676.67,0 814.33,0 814.33,0 818.17,0 822,-3.83 822,-7.67 822,-7.67 822,-15.33 822,-15.33 822,-19.17 818.17,-23 814.33,-23"/>
-<text text-anchor="middle" x="745.5" y="-7.8" font-family="Arial" font-size="14.00" fill="#c6c5fe">utils/ExchangeRates.js</text>
+<text text-anchor="middle" x="745.5" y="-7.8" font-family="Arial" font-size="14.00" fill="#c6c5fe">utils/exchangeRates.js</text>
 </g>
-<!-- handlers/v1/transaction.js&#45;&gt;utils/ExchangeRates.js -->
+<!-- handlers/v1/transaction.js&#45;&gt;utils/exchangeRates.js -->
 <g id="edge4" class="edge">
-<title>handlers/v1/transaction.js&#45;&gt;utils/ExchangeRates.js</title>
+<title>handlers/v1/transaction.js&#45;&gt;utils/exchangeRates.js</title>
 <path fill="none" stroke="#757575" d="M618.01,-118.87C623.4,-116.33 628.48,-113.24 633,-109.5 662.41,-85.15 639.77,-56.06 669,-31.5 670.36,-30.36 671.77,-29.29 673.23,-28.27"/>
 <polygon fill="#757575" stroke="#757575" points="675.21,-31.17 682.08,-23.1 671.68,-25.12 675.21,-31.17"/>
 </g>
@@ -69,9 +69,9 @@
 <path fill="none" stroke="#757575" d="M721.99,-64.01C713.19,-72.91 721.03,-82 745.5,-82 760.79,-82 769.59,-78.45 771.89,-73.61"/>
 <polygon fill="#757575" stroke="#757575" points="775.23,-72.58 769.01,-64.01 768.53,-74.59 775.23,-72.58"/>
 </g>
-<!-- utils/ExchangeRates.js&#45;&gt;config.js -->
+<!-- utils/exchangeRates.js&#45;&gt;config.js -->
 <g id="edge14" class="edge">
-<title>utils/ExchangeRates.js&#45;&gt;config.js</title>
+<title>utils/exchangeRates.js&#45;&gt;config.js</title>
 <path fill="none" stroke="#757575" d="M807.86,-23.13C812.9,-25.43 817.7,-28.19 822,-31.5 854.64,-56.59 874.23,-102.13 883.49,-129.01"/>
 <polygon fill="#757575" stroke="#757575" points="880.2,-130.22 886.64,-138.64 886.86,-128.04 880.2,-130.22"/>
 </g>

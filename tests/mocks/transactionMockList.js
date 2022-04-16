@@ -28,7 +28,7 @@ module.exports = [
     date: '2021-01-05',
     amount: '100',
     currency: 'EUR',
-    commission_amount: 0.50,
+    commission_amount: 0.5,
     commission_currency: 'EUR',
   },
   {

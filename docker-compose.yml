@@ -1,27 +1,27 @@
-version: "3"
+version: '3'
 services:
-  app:
-    build: .
-    depends_on:
-      - postgres
-    ports:
-      - "3000:3000"
-    env_file: .env.development
-  postgres:
-    image: postgres:13.3
-    restart: always
-    ports:
-      - "5432:5432"
-    environment:
-      POSTGRES_DB: postgres
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: postgres
-      PGDATA: "/var/lib/postgresql/data/pgdata"
-    networks:
-      - app-network
+    app:
+        build: .
+        depends_on:
+            - postgres
+        ports:
+            - '3000:3000'
+        env_file: .env.development
+    postgres:
+        image: postgres:13.3
+        restart: always
+        ports:
+            - '5432:5432'
+        environment:
+            POSTGRES_DB: postgres
+            POSTGRES_USER: user
+            POSTGRES_PASSWORD: postgres
+            PGDATA: '/var/lib/postgresql/data/pgdata'
+        networks:
+            - app-network
 
 volumes:
-  postgres-data:
+    postgres-data:
 networks:
-  app-network:
-    driver: bridge
+    app-network:
+        driver: bridge

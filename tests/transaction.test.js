@@ -1,5 +1,8 @@
+// eslint-disable-next-line node/no-unpublished-require
 const chai = require('chai');
+// eslint-disable-next-line node/no-unpublished-require
 const chaiHttp = require('chai-http');
+// eslint-disable-next-line node/no-unpublished-require
 const sinon = require('sinon');
 
 const build = require('../src/server');
@@ -18,7 +21,7 @@ const Transactions = models.Transactions;
 const transactionMocks = require('./mocks/transactionMockList');
 const configs = require('../src/config');
 
-const exchangeRatesService = require('../src/utils/ExchangeRates');
+const exchangeRatesService = require('../src/utils/exchangeRates');
 
 describe('test transaction API', async () => {
   let reqBody = {
@@ -77,16 +80,39 @@ describe('test transaction API', async () => {
       .send(reqBody)
       .end((err, res) => {
         const {
-          client_id, amount, date, currency, commission_amount, commission_currency,
+          client_id,
+          amount,
+          date,
+          currency,
+          commission_amount,
+          commission_currency,
         } = res.body;
 
         expect(res.status).to.equal(200, 'status is 200');
-        expect(client_id).to.equal(reqBody.client_id, 'calculate transaction client_id is expected same like body');
-        expect(amount).to.equal(reqBody.amount, 'calculate transaction amount is expected same like body');
-        expect(date).to.equal(reqBody.date, 'calculate transaction date is expected same like body');
-        expect(currency).to.equal('USD', 'calculate transaction currency expect USD');
-        expect(commission_amount).to.equal(Number(reqBody.amount) * rate * configs.rules.discount, 'calculate transaction commission_amount expect base rule 1');
-        expect(commission_currency).to.equal('EUR', 'calculate transaction commission_currency expect base to be EUR');
+        expect(client_id).to.equal(
+          reqBody.client_id,
+          'calculate transaction client_id is expected same like body'
+        );
+        expect(amount).to.equal(
+          reqBody.amount,
+          'calculate transaction amount is expected same like body'
+        );
+        expect(date).to.equal(
+          reqBody.date,
+          'calculate transaction date is expected same like body'
+        );
+        expect(currency).to.equal(
+          'USD',
+          'calculate transaction currency expect USD'
+        );
+        expect(commission_amount).to.equal(
+          Number(reqBody.amount) * rate * configs.rules.discount,
+          'calculate transaction commission_amount expect base rule 1'
+        );
+        expect(commission_currency).to.equal(
+          'EUR',
+          'calculate transaction commission_currency expect base to be EUR'
+        );
 
         done();
       });
@@ -109,16 +135,109 @@ describe('test transaction API', async () => {
       .send(reqBody)
       .end((err, res) => {
         const {
-          client_id, amount, date, currency, commission_amount, commission_currency,
+          client_id,
+          amount,
+          date,
+          currency,
+          commission_amount,
+          commission_currency,
         } = res.body;
 
         expect(res.status).to.equal(200, 'status is 200');
-        expect(client_id).to.equal(reqBody.client_id, 'calculate transaction client_id is expected same like body');
-        expect(amount).to.equal(reqBody.amount, 'calculate transaction amount is expected same like body');
-        expect(date).to.equal(reqBody.date, 'calculate transaction date is expected same like body');
-        expect(currency).to.equal('PLN', 'calculate transaction currency expect USD');
-        expect(commission_amount).to.equal(0.05, 'calculate transaction commission_amount expect base rule 1');
-        expect(commission_currency).to.equal('EUR', 'calculate transaction commission_currency expect base to be EUR');
+        expect(client_id).to.equal(
+          reqBody.client_id,
+          'calculate transaction client_id is expected same like body'
+        );
+        expect(amount).to.equal(
+          reqBody.amount,
+          'calculate transaction amount is expected same like body'
+        );
+        expect(date).to.equal(
+          reqBody.date,
+          'calculate transaction date is expected same like body'
+        );
+        expect(currency).to.equal(
+          'PLN',
+          'calculate transaction currency expect USD'
+        );
+        expect(commission_amount).to.equal(
+          0.05,
+          'calculate transaction commission_amount expect base rule 1'
+        );
+        expect(commission_currency).to.equal(
+          'EUR',
+          'calculate transaction commission_currency expect base to be EUR'
+        );
+
+        done();
+      });
+  });
+
+  it('it should failed no currency response', done => {
+    reqBody = {
+      client_id: 42,
+      amount: '140',
+      date: '2021-07-08',
+      currency: 'PLN',
+    };
+
+    rate = 0;
+
+    exchangeRates.returns(Promise.resolve(rate));
+
+    chai.request(server)
+      .post('/api/v1/transaction')
+      .send(reqBody)
+      .end((err, res) => {
+        const {
+          error,
+          message,
+        } = res.body;
+
+        expect(res.status).to.equal(400, 'status is 400');
+        expect(error).to.equal(
+          'FAILED_EXCHANGE_RATE',
+          'calculate transaction error_type is expected same like body'
+        );
+        expect(message).to.equal(
+          'exchange rate is 0',
+          'calculate transaction error_message is expected same like body'
+        );
+
+        done();
+      });
+  });
+
+  it('it should failed  currency is invalid', done => {
+    reqBody = {
+      client_id: 42,
+      amount: '140',
+      date: '2021-07-08',
+      currency: 'XXX',
+    };
+
+    rate = 0;
+
+    exchangeRates.returns(Promise.resolve(rate));
+
+    chai.request(server)
+      .post('/api/v1/transaction')
+      .send(reqBody)
+      .end((err, res) => {
+        const {
+          error,
+          message,
+        } = res.body;
+
+        expect(res.status).to.equal(400, 'status is 400');
+        expect(error).to.equal(
+          'Bad Request',
+          'calculate transaction error_type is expected same like body'
+        );
+        expect(message).to.equal(
+          'body.currency should be equal to one of the allowed values',
+          'calculate transaction error_message is expected same like body'
+        );
 
         done();
       });
