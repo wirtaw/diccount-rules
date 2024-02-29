@@ -1,48 +1,54 @@
 <!--
---- Readme.md Snippet without images Start ---
+&lt;--- Readme.md Snippet without images Start ---&gt;
 ## Tech Stack
 wirtaw/diccount-rules is built on the following main stack:
-- [Mocha](http://mochajs.org/) – Javascript Testing Framework
+
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
+- [Fastify](http://www.fastify.io/) – Microframeworks (Backend)
+- [Heroku Postgres](https://www.heroku.com/postgres) – PostgreSQL as a Service
 - [PostgreSQL](http://www.postgresql.org/) – Databases
 - [SQLite](http://www.sqlite.org/) – Databases
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
-- [Chai](http://chaijs.com/) – Javascript Testing Framework
 - [Sequelize](https://sequelize.org/) – Object Relational Mapper (ORM)
+- [Chai](http://chaijs.com/) – Javascript Testing Framework
 - [ESLint](http://eslint.org/) – Code Review
-- [SinonJS](http://sinonjs.org/) – Javascript Testing Framework
-- [Shell](https://en.wikipedia.org/wiki/Shell_script) – Shells
-- [nodemon](http://nodemon.io/) – node.js Application Monitoring
+- [Mocha](http://mochajs.org/) – Javascript Testing Framework
 - [Prettier](https://prettier.io/) – Code Review
-- [Fastify](http://www.fastify.io/) – Microframeworks (Backend)
+- [SinonJS](http://sinonjs.org/) – Javascript Testing Framework
+- [nodemon](http://nodemon.io/) – node.js Application Monitoring
+- [Luxon](https://moment.github.io/luxon/) – Javascript Utilities & Libraries
 
 Full tech stack [here](/techstack.md)
---- Readme.md Snippet without images End ---
 
---- Readme.md Snippet with images Start ---
+&lt;--- Readme.md Snippet without images End ---&gt;
+
+&lt;--- Readme.md Snippet with images Start ---&gt;
 ## Tech Stack
 wirtaw/diccount-rules is built on the following main stack:
-- <img width='25' height='25' src='https://img.stackshare.io/service/832/mocha.png' alt='Mocha'/> [Mocha](http://mochajs.org/) – Javascript Testing Framework
+
+- <img width='25' height='25' src='https://img.stackshare.io/service/1209/javascript.jpeg' alt='JavaScript'/> [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
+- <img width='25' height='25' src='https://img.stackshare.io/service/7609/24939410.png' alt='Fastify'/> [Fastify](http://www.fastify.io/) – Microframeworks (Backend)
+- <img width='25' height='25' src='https://img.stackshare.io/service/2516/original.png' alt='Heroku Postgres'/> [Heroku Postgres](https://www.heroku.com/postgres) – PostgreSQL as a Service
 - <img width='25' height='25' src='https://img.stackshare.io/service/1028/ASOhU5xJ.png' alt='PostgreSQL'/> [PostgreSQL](http://www.postgresql.org/) – Databases
 - <img width='25' height='25' src='https://img.stackshare.io/service/1071/sqlite.jpg' alt='SQLite'/> [SQLite](http://www.sqlite.org/) – Databases
-- <img width='25' height='25' src='https://img.stackshare.io/service/1209/javascript.jpeg' alt='JavaScript'/> [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
-- <img width='25' height='25' src='https://img.stackshare.io/service/1725/chai.png' alt='Chai'/> [Chai](http://chaijs.com/) – Javascript Testing Framework
 - <img width='25' height='25' src='https://img.stackshare.io/service/3211/3591786.png' alt='Sequelize'/> [Sequelize](https://sequelize.org/) – Object Relational Mapper (ORM)
+- <img width='25' height='25' src='https://img.stackshare.io/service/1725/chai.png' alt='Chai'/> [Chai](http://chaijs.com/) – Javascript Testing Framework
 - <img width='25' height='25' src='https://img.stackshare.io/service/3337/Q4L7Jncy.jpg' alt='ESLint'/> [ESLint](http://eslint.org/) – Code Review
-- <img width='25' height='25' src='https://img.stackshare.io/service/3509/logo.png' alt='SinonJS'/> [SinonJS](http://sinonjs.org/) – Javascript Testing Framework
-- <img width='25' height='25' src='https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png' alt='Shell'/> [Shell](https://en.wikipedia.org/wiki/Shell_script) – Shells
-- <img width='25' height='25' src='https://img.stackshare.io/service/5577/preview.png' alt='nodemon'/> [nodemon](http://nodemon.io/) – node.js Application Monitoring
+- <img width='25' height='25' src='https://img.stackshare.io/service/832/mocha.png' alt='Mocha'/> [Mocha](http://mochajs.org/) – Javascript Testing Framework
 - <img width='25' height='25' src='https://img.stackshare.io/service/7035/default_66f265943abed56bcdbfca1c866a4261b1fbb063.jpg' alt='Prettier'/> [Prettier](https://prettier.io/) – Code Review
-- <img width='25' height='25' src='https://img.stackshare.io/service/7609/24939410.png' alt='Fastify'/> [Fastify](http://www.fastify.io/) – Microframeworks (Backend)
+- <img width='25' height='25' src='https://img.stackshare.io/service/3509/logo.png' alt='SinonJS'/> [SinonJS](http://sinonjs.org/) – Javascript Testing Framework
+- <img width='25' height='25' src='https://img.stackshare.io/service/5577/preview.png' alt='nodemon'/> [nodemon](http://nodemon.io/) – node.js Application Monitoring
+- <img width='25' height='25' src='https://img.stackshare.io/service/10330/no-img-open-source.png' alt='Luxon'/> [Luxon](https://moment.github.io/luxon/) – Javascript Utilities & Libraries
 
 Full tech stack [here](/techstack.md)
---- Readme.md Snippet with images End ---
+
+&lt;--- Readme.md Snippet with images End ---&gt;
 -->
 <div align="center">
 
 # Tech Stack File
 ![](https://img.stackshare.io/repo.svg "repo") [wirtaw/diccount-rules](https://github.com/wirtaw/diccount-rules)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|24<br/>Tools used|11/11/23 <br/>Report generated|
+|24<br/>Tools used|02/29/24 <br/>Report generated|
 |------|------|
 </div>
 
@@ -72,14 +78,22 @@ Full tech stack [here](/techstack.md)
 </tr>
 </table>
 
-## <img src='https://img.stackshare.io/databases.svg'/> Data (3)
+## <img src='https://img.stackshare.io/databases.svg'/> Data (4)
 <table><tr>
   <td align='center'>
+  <img width='36' height='36' src='https://img.stackshare.io/service/2516/original.png' alt='Heroku Postgres'>
+  <br>
+  <sub><a href="https://www.heroku.com/postgres">Heroku Postgres</a></sub>
+  <br>
+  <sub></sub>
+</td>
+
+<td align='center'>
   <img width='36' height='36' src='https://img.stackshare.io/service/1028/ASOhU5xJ.png' alt='PostgreSQL'>
   <br>
   <sub><a href="http://www.postgresql.org/">PostgreSQL</a></sub>
   <br>
-  <sub></sub>
+  <sub>v13.3</sub>
 </td>
 
 <td align='center'>
@@ -173,9 +187,9 @@ Full tech stack [here](/techstack.md)
 ## Other (1)
 <table><tr>
   <td align='center'>
-  <img width='36' height='36' src='https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png' alt='Shell'>
+  <img width='36' height='36' src='https://img.stackshare.io/service/10330/no-img-open-source.png' alt='Luxon'>
   <br>
-  <sub><a href="https://en.wikipedia.org/wiki/Shell_script">Shell</a></sub>
+  <sub><a href="https://moment.github.io/luxon/">Luxon</a></sub>
   <br>
   <sub></sub>
 </td>
@@ -184,9 +198,9 @@ Full tech stack [here](/techstack.md)
 </table>
 
 
-## <img src='https://img.stackshare.io/group.svg' /> Open source packages (10)</h2>
+## <img src='https://img.stackshare.io/group.svg' /> Open source packages (9)</h2>
 
-## <img width='24' height='24' src='https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png'/> npm (10)
+## <img width='24' height='24' src='https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png'/> npm (9)
 
 |NAME|VERSION|LAST UPDATED|LAST UPDATED BY|LICENSE|VULNERABILITIES|
 |:------|:------|:------|:------|:------|:------|
@@ -195,7 +209,6 @@ Full tech stack [here](/techstack.md)
 |[eslint-config-prettier](https://www.npmjs.com/eslint-config-prettier)|v8.8.0|05/27/23|Poplavskij Vladimir |MIT|N/A|
 |[eslint-plugin-import](https://www.npmjs.com/eslint-plugin-import)|v2.27.5|05/27/23|Poplavskij Vladimir |MIT|N/A|
 |[eslint-plugin-node](https://www.npmjs.com/eslint-plugin-node)|v11.1.0|05/27/23|Poplavskij Vladimir |MIT|N/A|
-|[luxon](https://www.npmjs.com/luxon)|v2.5.2|04/16/22|Poplavskij Vladimir |MIT|N/A|
 |[pg](https://www.npmjs.com/pg)|v8.11.0|04/09/22|Poplavskij Vladimir |MIT|N/A|
 |[pino-pretty](https://www.npmjs.com/pino-pretty)|v7.6.1|05/27/23|Poplavskij Vladimir |MIT|N/A|
 |[sequelize-cli](https://www.npmjs.com/sequelize-cli)|v6.6.0|05/27/23|Poplavskij Vladimir |MIT|N/A|
@@ -204,4 +217,4 @@ Full tech stack [here](/techstack.md)
 <br/>
 <div align='center'>
 
-Generated via [Stack File](https://github.com/apps/stack-file)
+Generated via [Stack File](https://github.com/marketplace/stack-file)
