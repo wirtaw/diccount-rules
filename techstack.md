@@ -3,18 +3,18 @@
 ## Tech Stack
 wirtaw/diccount-rules is built on the following main stack:
 
-- [Mocha](http://mochajs.org/) – Javascript Testing Framework
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
+- [Fastify](http://www.fastify.io/) – Microframeworks (Backend)
+- [Heroku Postgres](https://www.heroku.com/postgres) – PostgreSQL as a Service
 - [PostgreSQL](http://www.postgresql.org/) – Databases
 - [SQLite](http://www.sqlite.org/) – Databases
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
-- [Chai](http://chaijs.com/) – Javascript Testing Framework
-- [Heroku Postgres](https://www.heroku.com/postgres) – PostgreSQL as a Service
 - [Sequelize](https://sequelize.org/) – Object Relational Mapper (ORM)
+- [Chai](http://chaijs.com/) – Javascript Testing Framework
 - [ESLint](http://eslint.org/) – Code Review
+- [Mocha](http://mochajs.org/) – Javascript Testing Framework
+- [Prettier](https://prettier.io/) – Code Review
 - [SinonJS](http://sinonjs.org/) – Javascript Testing Framework
 - [nodemon](http://nodemon.io/) – node.js Application Monitoring
-- [Prettier](https://prettier.io/) – Code Review
-- [Fastify](http://www.fastify.io/) – Microframeworks (Backend)
 - [Luxon](https://moment.github.io/luxon/) – Javascript Utilities & Libraries
 
 Full tech stack [here](/techstack.md)
@@ -25,18 +25,18 @@ Full tech stack [here](/techstack.md)
 ## Tech Stack
 wirtaw/diccount-rules is built on the following main stack:
 
-- <img width='25' height='25' src='https://img.stackshare.io/service/832/mocha.png' alt='Mocha'/> [Mocha](http://mochajs.org/) – Javascript Testing Framework
+- <img width='25' height='25' src='https://img.stackshare.io/service/1209/javascript.jpeg' alt='JavaScript'/> [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
+- <img width='25' height='25' src='https://img.stackshare.io/service/7609/24939410.png' alt='Fastify'/> [Fastify](http://www.fastify.io/) – Microframeworks (Backend)
+- <img width='25' height='25' src='https://img.stackshare.io/service/2516/original.png' alt='Heroku Postgres'/> [Heroku Postgres](https://www.heroku.com/postgres) – PostgreSQL as a Service
 - <img width='25' height='25' src='https://img.stackshare.io/service/1028/ASOhU5xJ.png' alt='PostgreSQL'/> [PostgreSQL](http://www.postgresql.org/) – Databases
 - <img width='25' height='25' src='https://img.stackshare.io/service/1071/sqlite.jpg' alt='SQLite'/> [SQLite](http://www.sqlite.org/) – Databases
-- <img width='25' height='25' src='https://img.stackshare.io/service/1209/javascript.jpeg' alt='JavaScript'/> [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
-- <img width='25' height='25' src='https://img.stackshare.io/service/1725/chai.png' alt='Chai'/> [Chai](http://chaijs.com/) – Javascript Testing Framework
-- <img width='25' height='25' src='https://img.stackshare.io/service/2516/original.png' alt='Heroku Postgres'/> [Heroku Postgres](https://www.heroku.com/postgres) – PostgreSQL as a Service
 - <img width='25' height='25' src='https://img.stackshare.io/service/3211/3591786.png' alt='Sequelize'/> [Sequelize](https://sequelize.org/) – Object Relational Mapper (ORM)
+- <img width='25' height='25' src='https://img.stackshare.io/service/1725/chai.png' alt='Chai'/> [Chai](http://chaijs.com/) – Javascript Testing Framework
 - <img width='25' height='25' src='https://img.stackshare.io/service/3337/Q4L7Jncy.jpg' alt='ESLint'/> [ESLint](http://eslint.org/) – Code Review
+- <img width='25' height='25' src='https://img.stackshare.io/service/832/mocha.png' alt='Mocha'/> [Mocha](http://mochajs.org/) – Javascript Testing Framework
+- <img width='25' height='25' src='https://img.stackshare.io/service/7035/default_66f265943abed56bcdbfca1c866a4261b1fbb063.jpg' alt='Prettier'/> [Prettier](https://prettier.io/) – Code Review
 - <img width='25' height='25' src='https://img.stackshare.io/service/3509/logo.png' alt='SinonJS'/> [SinonJS](http://sinonjs.org/) – Javascript Testing Framework
 - <img width='25' height='25' src='https://img.stackshare.io/service/5577/preview.png' alt='nodemon'/> [nodemon](http://nodemon.io/) – node.js Application Monitoring
-- <img width='25' height='25' src='https://img.stackshare.io/service/7035/default_66f265943abed56bcdbfca1c866a4261b1fbb063.jpg' alt='Prettier'/> [Prettier](https://prettier.io/) – Code Review
-- <img width='25' height='25' src='https://img.stackshare.io/service/7609/24939410.png' alt='Fastify'/> [Fastify](http://www.fastify.io/) – Microframeworks (Backend)
 - <img width='25' height='25' src='https://img.stackshare.io/service/10330/no-img-open-source.png' alt='Luxon'/> [Luxon](https://moment.github.io/luxon/) – Javascript Utilities & Libraries
 
 Full tech stack [here](/techstack.md)
@@ -48,7 +48,7 @@ Full tech stack [here](/techstack.md)
 # Tech Stack File
 ![](https://img.stackshare.io/repo.svg "repo") [wirtaw/diccount-rules](https://github.com/wirtaw/diccount-rules)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|24<br/>Tools used|01/05/24 <br/>Report generated|
+|24<br/>Tools used|02/29/24 <br/>Report generated|
 |------|------|
 </div>
 
